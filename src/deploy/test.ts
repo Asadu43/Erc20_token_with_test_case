@@ -14,6 +14,7 @@ const deployContract: DeployFunction = async function (
   const {
     TestToken,
     } = contractNames;
+    const {} = hre
 
   let contracts: IDeployedContracts = {};
   const signers = await hre.ethers.getSigners();
@@ -23,7 +24,7 @@ const deployContract: DeployFunction = async function (
 
   
 
-  console.log("testToken", contracts.TestToken.address)
+  console.log("AsadToken", contracts.TestToken.address)
 
 
   try {
