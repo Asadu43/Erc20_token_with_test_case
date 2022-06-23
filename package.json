@@ -4,7 +4,6 @@
   "directories": {
     "test": "test"
   },
-
   "scripts": {
     "prepack": "npm build",
     "test": "hardhat test",
@@ -20,13 +19,7 @@
     "fmt:sol": "prettier 'contracts/**/*.sol' -w",
     "size": "hardhat size-contracts --show-stack-traces",
     "coverage": "hardhat coverage --testfiles ./test/src",
-    "verify:network": "hardhat verify --network <contract-address>",
-    "docs:init": "node_modules/.bin/doxity init --target 'doxity' --src 'contracts/*' --dir 'pages' --out './docs'",
-    "docs:compile": "node_modules/.bin/doxity compile",
-    "docs:develop": "node_modules/.bin/doxity develop",
-    "docs:publish": "node_modules/.bin/doxity publish",
-    "docs:build": "node_modules/.bin/doxity build",
-    "doc": "scripts/doc.sh"
+    "verify:network": "hardhat verify --network <contract-address>"
   },
   "repository": {
     "type": "git"
@@ -48,7 +41,7 @@
     "@nomiclabs/hardhat-ganache": "^2.0.1",
     "@nomiclabs/hardhat-waffle": "^2.0.0",
     "@openeth/truffle-typings": "^0.0.5",
-    "@openzeppelin/contracts": "^3.3.0",
+    "@openzeppelin/contracts": "^3.4.2",
     "@openzeppelin/test-helpers": "^0.5.9",
     "@typechain/ethers-v5": "^7.0.1",
     "@typechain/hardhat": "^2.3.0",

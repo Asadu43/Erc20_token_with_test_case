@@ -9,8 +9,9 @@ async function main() {
     // hre.tracer.nameTags[await signers[0].getAddress()] = "ADMIN";
 
 
-    const Token = await ethers.getContractFactory("TestToken", signers[0]);
+    const Token = await ethers.getContractFactory("AsadToken", signers[0]);
     tokenInstance = await Token.deploy()
+    
 
 
 }
